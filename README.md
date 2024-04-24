@@ -17,6 +17,8 @@
 
 **conway.py**: fundamental of grid and logical evovle
 
+**rle**: rle String parser machine
+
 **rle_File**: all rle file and Plaintext referenced
 
 **test_gilder_simple.py**: creat static figure of grid
