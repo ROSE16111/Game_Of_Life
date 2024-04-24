@@ -7,9 +7,25 @@
   2. Survival: A live cell that has **2-3** live neighbouring cells will remain alive 
   3. Overpopulation: A live cell with **more than 3** live neighbours will die 
   4. Reproduction: A dead cell with **exactly 3** live neighbours will become alive 
-* **Enviroment**: python, numpy, scipy and matplotlib 
+* **Enviroment**: python, numpy, scipy and matplotlib created by conda
 
-## Game of Life Simulation 
+## Game of Life Simulation
+
+**README**: note of this project
+
+**pic**: pictures of the README
+
+**conway.py**: fundamental of grid and logical evovle
+
+**rle_File**: all rle file and Plaintext referenced
+
+**test_gilder_simple.py**: creat static figure of grid
+
+**test_glider.py**: creat dynamic figure of grid, included 3 different pattern(size >20)
+
+**test_Turing.py**: create daynamic figure of grid in FastMode, including 3 different pattern(size >20) and one large module and Turing module.
+
+**try**: not important file for parttern that can ignored
 ### conway 
 #### Init()
   1. **grid** (N * N), N=256
@@ -173,8 +189,11 @@
   **file from kiwi**: https://conwaylife.com/wiki/30P25#LCM_oscillators
 
 
-### Part H
-it is indeed Turing complete.
+### Part H 
+##### Given the Turing machine pattern runs within GoL, comment on whether GoL is Turing complete. 
+  (Justify your answer by referencing the theory of Turing machines and the different components 
+  of the Turing machine pattern provided using this link: http://rendell-attic.org/gol/tm.htm)
+**ans**: it is indeed Turing complete.
 *  the definition of Turing machine
 https://plato.stanford.edu/entries/turing-machine/#TuriDefi
  A Turing machine, in computational theory, is a mathematical model of computation that defines an abstract machine, which manipulates(操纵) symbols on a strip of tape according to a table of rules. 
@@ -199,6 +218,11 @@ https://plato.stanford.edu/entries/turing-machine/#TuriDefi
 
 
 Memory（内存）：图中的“Memory”区域代表计算机存储数据的地方。在生命游戏的实现中，这可能通过一系列特定的细胞排列来存储信息，每个排列代表不同的数据位。
+
 Clock（时钟）：生命游戏的“Clock”部分控制整个系统的时间步进。在电脑硬件中，时钟产生周期性的信号来同步操作。在生命游戏的构造中，时钟可能由一系列定期产生变化（如振荡器）的细胞组成，这些变化通过生命游戏的规则传播，并驱动计算机的其他部分运作。
+
 ALU（算术逻辑单元）：ALU是处理基本算术和逻辑运算的计算机部件。在生命游戏中构建的ALU会使用细胞自动机的规则来模拟这些操作。例如，它可能使用特定的细胞结构来表示加法、减法或逻辑操作，并利用细胞的变化来执行运算。
+
 Program（程序）：这是存储指令的区域，它控制计算机如何执行操作。在生命游戏中的实现中，程序可能被编码在一长串细胞中，每个细胞的状态（生存或死亡）代表一个指令位。
+
+print(输出)
